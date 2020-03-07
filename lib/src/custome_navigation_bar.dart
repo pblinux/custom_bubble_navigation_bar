@@ -265,11 +265,17 @@ class _CustomNavigationBarTile extends StatelessWidget {
     return Transform.scale(
       scale: 1.0 + scale,
       child: GestureDetector(
-        child: Icon(
-          item.icon,
-          color: selected ? selectedColor : unSelectedColor,
-          size: iconSize,
+        child: Container(
+          child: item.child,
+          height: iconSize,
+          width: iconSize,
         ),
+
+        // Icon(
+        //   item.icon,
+        //   color: selected ? selectedColor : unSelectedColor,
+        //   size: iconSize,
+        // ),
         onTap: onPressed,
       ),
     );

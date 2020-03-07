@@ -22,24 +22,24 @@ class CustomNavigationBarItem {
   ///
   /// the [selectedIcon] must not be null.
   const CustomNavigationBarItem({
-    @required this.icon,
-    IconData selectedIcon,
+    @required this.child,
+    Widget selectedChild,
     this.selectedTitle,
     this.unSelectedTitle,
-  }) : selectedIcon = selectedIcon ?? icon;
+  }) : selectedChild = selectedChild ?? child;
 
   ///
   /// The icon of the item
   /// Typically the icon is an [Icon].
   ///
-  final IconData icon;
+  final Widget child;
 
   /// An alternative icon displayed when this bottom navigation item is
   /// selected.
   ///
   /// If this icon is not provided, the bottom navigation bar will display
   /// [icon] in either state.
-  final IconData selectedIcon;
+  final Widget selectedChild;
 
   ///
   /// The title string when item is selected.

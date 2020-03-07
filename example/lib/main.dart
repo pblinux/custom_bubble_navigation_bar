@@ -86,36 +86,36 @@ class _MyHomePageState extends State<MyHomePage> {
         SizedBox(
           height: 8.0,
         ),
-        CustomNavigationBar(
-          iconSize: 30.0,
-          selectedColor: Colors.white,
-          strokeColor: Colors.white,
-          unSelectedColor: Color(0xff6c788a),
-          backgroundColor: Color(0xff040307),
-          items: [
-            CustomNavigationBarItem(
-              icon: Icons.home,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.shopping_cart,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.lightbulb_outline,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.search,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.account_circle,
-            ),
-          ],
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-        ),
+        // CustomNavigationBar(
+        //   iconSize: 30.0,
+        //   selectedColor: Colors.white,
+        //   strokeColor: Colors.white,
+        //   unSelectedColor: Color(0xff6c788a),
+        //   backgroundColor: Color(0xff040307),
+        //   items: [
+        //     CustomNavigationBarItem(
+        //       icon: Icons.home,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.shopping_cart,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.lightbulb_outline,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.search,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.account_circle,
+        //     ),
+        //   ],
+        //   currentIndex: _currentIndex,
+        //   onTap: (index) {
+        //     setState(() {
+        //       _currentIndex = index;
+        //     });
+        //   },
+        // ),
         SizedBox(
           height: 8.0,
         ),
@@ -133,36 +133,36 @@ class _MyHomePageState extends State<MyHomePage> {
         SizedBox(
           height: 8.0,
         ),
-        CustomNavigationBar(
-          iconSize: 30.0,
-          selectedColor: Color(0xff040307),
-          strokeColor: Color(0x90040307),
-          unSelectedColor: Color(0xffacacac),
-          backgroundColor: Colors.white,
-          items: [
-            CustomNavigationBarItem(
-              icon: Icons.home,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.shopping_cart,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.lightbulb_outline,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.search,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.account_circle,
-            ),
-          ],
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-        ),
+        // CustomNavigationBar(
+        //   iconSize: 30.0,
+        //   selectedColor: Color(0xff040307),
+        //   strokeColor: Color(0x90040307),
+        //   unSelectedColor: Color(0xffacacac),
+        //   backgroundColor: Colors.white,
+        //   items: [
+        //     CustomNavigationBarItem(
+        //       icon: Icons.home,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.shopping_cart,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.lightbulb_outline,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.search,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.account_circle,
+        //     ),
+        //   ],
+        //   currentIndex: _currentIndex,
+        //   onTap: (index) {
+        //     setState(() {
+        //       _currentIndex = index;
+        //     });
+        //   },
+        // ),
         SizedBox(
           height: 8.0,
         ),
@@ -180,37 +180,37 @@ class _MyHomePageState extends State<MyHomePage> {
         SizedBox(
           height: 8.0,
         ),
-        CustomNavigationBar(
-          elevation: 0.0,
-          iconSize: 30.0,
-          selectedColor: Color(0xff625aff),
-          strokeColor: Color(0xff625aff),
-          unSelectedColor: Colors.white,
-          backgroundColor: Color(0xffa9a5f2),
-          items: [
-            CustomNavigationBarItem(
-              icon: Icons.home,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.shopping_cart,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.lightbulb_outline,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.search,
-            ),
-            CustomNavigationBarItem(
-              icon: Icons.account_circle,
-            ),
-          ],
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-        ),
+        // CustomNavigationBar(
+        //   elevation: 0.0,
+        //   iconSize: 30.0,
+        //   selectedColor: Color(0xff625aff),
+        //   strokeColor: Color(0xff625aff),
+        //   unSelectedColor: Colors.white,
+        //   backgroundColor: Color(0xffa9a5f2),
+        //   items: [
+        //     CustomNavigationBarItem(
+        //       icon: Icons.home,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.shopping_cart,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.lightbulb_outline,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.search,
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: Icons.account_circle,
+        //     ),
+        //   ],
+        //   currentIndex: _currentIndex,
+        //   onTap: (index) {
+        //     setState(() {
+        //       _currentIndex = index;
+        //     });
+        //   },
+        // ),
         SizedBox(
           height: 8.0,
         ),
@@ -228,36 +228,36 @@ class _MyHomePageState extends State<MyHomePage> {
         SizedBox(
           height: 8.0,
         ),
-        CustomNavigationBar(
-          iconSize: 30.0,
-          selectedColor: Color(0xff0c18fb),
-          strokeColor: Colors.grey[200],
-          unSelectedColor: Colors.grey[600],
-          backgroundColor: Colors.white,
-          items: [
-            CustomNavigationBarItem(
-              icon: AntDesign.getIconData('home'),
-            ),
-            CustomNavigationBarItem(
-              icon: AntDesign.getIconData('shoppingcart'),
-            ),
-            CustomNavigationBarItem(
-              icon: AntDesign.getIconData("cloudo"),
-            ),
-            CustomNavigationBarItem(
-              icon: AntDesign.getIconData('search1'),
-            ),
-            CustomNavigationBarItem(
-              icon: AntDesign.getIconData("user"),
-            ),
-          ],
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-        ),
+        // CustomNavigationBar(
+        //   iconSize: 30.0,
+        //   selectedColor: Color(0xff0c18fb),
+        //   strokeColor: Colors.grey[200],
+        //   unSelectedColor: Colors.grey[600],
+        //   backgroundColor: Colors.white,
+        //   items: [
+        //     CustomNavigationBarItem(
+        //       icon: AntDesign.getIconData('home'),
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: AntDesign.getIconData('shoppingcart'),
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: AntDesign.getIconData("cloudo"),
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: AntDesign.getIconData('search1'),
+        //     ),
+        //     CustomNavigationBarItem(
+        //       icon: AntDesign.getIconData("user"),
+        //     ),
+        //   ],
+        //   currentIndex: _currentIndex,
+        //   onTap: (index) {
+        //     setState(() {
+        //       _currentIndex = index;
+        //     });
+        //   },
+        // ),
         SizedBox(
           height: 8.0,
         ),
