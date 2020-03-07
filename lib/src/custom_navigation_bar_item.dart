@@ -17,29 +17,19 @@
 
 import 'package:flutter/material.dart';
 
-class CustomNavigationBarItem {
-  /// Create a Custom Navigationbar Item.
-  ///
-  /// the [selectedIcon] must not be null.
-  const CustomNavigationBarItem({
-    @required this.child,
-    Widget selectedChild,
-    this.selectedTitle,
-    this.unSelectedTitle,
-  }) : selectedChild = selectedChild ?? child;
-
+abstract class CustomNavigationBarItem {
   ///
   /// The icon of the item
   /// Typically the icon is an [Icon].
   ///
-  final Widget child;
+  final dynamic child;
 
   /// An alternative icon displayed when this bottom navigation item is
   /// selected.
   ///
   /// If this icon is not provided, the bottom navigation bar will display
   /// [icon] in either state.
-  final Widget selectedChild;
+  final dynamic selectedChild;
 
   ///
   /// The title string when item is selected.
@@ -52,4 +42,61 @@ class CustomNavigationBarItem {
   ///
   /// Item will only show [icon] when [unSelectedTitle] is null.
   final String unSelectedTitle;
+
+  const CustomNavigationBarItem(
+      this.child, this.selectedChild, this.selectedTitle, this.unSelectedTitle);
 }
+
+class CustomNavigationBarWidgetItem extends CustomNavigationBarItem {
+  CustomNavigationBarWidgetItem({
+    @required Widget child,
+    Widget selectedChild,
+    String selectedTitle,
+    String unSelectedTitle,
+  }) : super(child, selectedChild ?? child, selectedTitle, unSelectedTitle);
+}
+
+class CustomNavigationBarIconItem extends CustomNavigationBarItem {
+  CustomNavigationBarIconItem({
+    @required IconData icon,
+    IconData selectedIcon,
+    String selectedTitle,
+    String unSelectedTitle,
+  }) : super(icon, selectedIcon ?? icon, selectedTitle, unSelectedTitle);
+}
+// class CustomNavigationBarItem {
+//   /// Create a Custom Navigationbar Item.
+//   ///
+//   /// the [selectedIcon] must not be null.
+//   const CustomNavigationBarItem({
+//     @required this.child,
+//     Widget selectedChild,
+//     this.selectedTitle,
+//     this.unSelectedTitle,
+//   }) : selectedChild = selectedChild ?? child;
+
+//   ///
+//   /// The icon of the item
+//   /// Typically the icon is an [Icon].
+//   ///
+//   final Widget child;
+
+//   /// An alternative icon displayed when this bottom navigation item is
+//   /// selected.
+//   ///
+//   /// If this icon is not provided, the bottom navigation bar will display
+//   /// [icon] in either state.
+//   final Widget selectedChild;
+
+//   ///
+//   /// The title string when item is selected.
+//   ///
+//   /// Item will only show [icon] when [selectedTitle] is null.
+//   final String selectedTitle;
+
+//   ///
+//   /// The title string when item is unselected.
+//   ///
+//   /// Item will only show [icon] when [unSelectedTitle] is null.
+//   final String unSelectedTitle;
+// }
