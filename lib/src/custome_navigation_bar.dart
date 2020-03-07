@@ -205,6 +205,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar>
 
     return Material(
       elevation: widget.elevation,
+      color: Colors.transparent,
       child: Container(
         decoration: BoxDecoration(
             color: widget.backgroundColor,
