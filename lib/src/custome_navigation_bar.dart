@@ -39,6 +39,7 @@ class CustomNavigationBar extends StatefulWidget {
     this.strokeColor = Colors.blueAccent,
     this.bubbleCurve = Curves.linear,
     this.scaleCurve = Curves.linear,
+    this.borderRadius,
   })  : assert(items != null),
         assert(scaleFactor <= 0.5, 'Scale factor must smaller than 0.5'),
         assert(scaleFactor > 0, 'Scale factor must bigger than 0'),
@@ -106,6 +107,11 @@ class CustomNavigationBar extends StatefulWidget {
   /// animation curve of scale effect
   ///
   final Curve scaleCurve;
+
+  ///
+  /// border radius for container
+  ///
+  final BorderRadius borderRadius;
 
   @override
   _CustomNavigationBarState createState() => _CustomNavigationBarState();
@@ -200,7 +206,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar>
     return Material(
       elevation: widget.elevation,
       child: Container(
-        color: widget.backgroundColor,
+        decoration: BoxDecoration(
+            color: widget.backgroundColor,
+            borderRadius: widget.borderRadius ??
+                DefaultCustomNavigationBarStyle.defaultBorderRadius),
         height: DefaultCustomNavigationBarStyle.defaultHeight +
             additionalBottomPadding,
         child: Row(

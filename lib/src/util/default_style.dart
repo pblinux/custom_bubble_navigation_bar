@@ -4,4 +4,5 @@ class DefaultCustomNavigationBarStyle {
   static final defaultHeight = kBottomNavigationBarHeight;
   static final defaultColor = Colors.blueAccent;
   static final defaultUnselectedColor = Colors.grey[600];
+  static final defaultBorderRadius = BorderRadius.circular(0.0);
 }
